@@ -49,7 +49,7 @@ public class Syllable {
     }
 
     public static void main(String []args) throws FileNotFoundException{
-        File file = new File("4Syllables.txt");
+        File file = new File("textFiles/4Syllables.txt");
         try (Scanner sc = new Scanner(file)) {
             System.out.println("Test1");
             while(sc.hasNextLine()){
