@@ -12,7 +12,7 @@ public class Syllable2 {
         loadFile(file);
         Scanner scan = new Scanner(System.in);
         while (scan.hasNext()) {
-            String word = scan.next();
+            String word = scan.next().toLowerCase();
             if (hm.containsKey(word)) {
                 System.out.println(hm.get(word));
             } else {
