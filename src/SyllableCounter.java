@@ -1,14 +1,15 @@
+package src;
 import java.io.*;
 import java.util.*;
 
-public class Syllable2 {
+public class SyllableCounter {
 
     public static HashMap<String, Integer> hm = new HashMap<String, Integer>();
 
     public static void main(String[] args) {
         
         // Source of txt file = http://www.delphiforfun.org/programs/Syllables.htm
-        String file = "./Syllables.txt";
+        String file = "src/Syllables.txt";
         loadFile(file);
         Scanner scan = new Scanner(System.in);
         while (scan.hasNext()) {
@@ -22,7 +23,7 @@ public class Syllable2 {
         scan.close();
     }
 
-    public Syllable2(){
+    public SyllableCounter(){
         
     }
 

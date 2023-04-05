@@ -1,9 +1,10 @@
+package src;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
-public class tester {
+public class Testing {
     
     static int numSyllables[];
     static int syl, total = 0, currentSyllable = 0;
@@ -26,7 +27,8 @@ public class tester {
         for(String file : files){
             resetSyllables();
 
-            Syllable2 s = new Syllable2();
+            SyllableCounter s = new SyllableCounter();
+            //String syllableFile = "";
             String syllableFile = "./Syllables.txt";
             s.loadFile(syllableFile);
             Scanner scan;
