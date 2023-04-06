@@ -1,4 +1,3 @@
-package src;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -36,7 +35,6 @@ public class Testing {
                 scan = new Scanner(new File(file));
             } catch(FileNotFoundException e){
                 System.err.println("File not found: " + file);
-                System.out.println(file + " " + files[files.length-1] + " " + file.equals(files[files.length-1]) + " " + accuracies.size());
                 if(file.equals(files[files.length-1])){
                     printAccuracies();
                 } continue;

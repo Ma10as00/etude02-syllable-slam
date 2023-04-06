@@ -12,25 +12,25 @@ If you choose to clone the repository, you can do so by running the following co
 ```git clone https://altitude.otago.ac.nz/cosc326-four-functioneers/etude02-syllable-slam ```
 
 With the repository cloned, you can compile the program by running the following command in the terminal:  
-```javac -d bin src/*.java```
+```javac *.java```
 
 ## Running the program
 To run the program, you can run the following command in the terminal:  
-```java src/SyllableCounter.java```
+```java SyllableCounter.java```
 
 This will run the program, and it will read from the terminal for input. 
 You can also run the program with a file as input by running the following command:  
-```java src/SyllableCounter.java < input_file```,
+```java SyllableCounter.java < input_file```,
 where ```input_file``` is the path to the file you want to read from.
 
 The program will then read the file line by line.
 
 ## Testing the program
 For testing our syllable counting algorithm, we have created a java file called Tester.java which uses files full of words with the same number of syllables to give to the syllable counter.  
-The file is located in the ```src/textFiles/``` folder.  
+The file is located in the ```textFiles/``` folder.  
 To run the tester, you can run the following command in the terminal:  
-```java src/Tester.java```
+```java Tester.java```
 
-This will read from the 8 files currently stored in the ```src/textFiles/``` folder. (1Syllables.txt to 8Syllables.txt)  
+This will read from the 8 files currently stored in the ```textFiles/``` folder. (1Syllables.txt to 8Syllables.txt)  
 The program can only handle files with a maximum of 8 syllables.  
 The tester will output the number of syllables counted for each word in the file, and the accuracy of the program for each file.
