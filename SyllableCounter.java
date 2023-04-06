@@ -8,7 +8,7 @@ public class SyllableCounter {
     public static void main(String[] args) {
         
         // Source of txt file = http://www.delphiforfun.org/programs/Syllables.htm
-        String file = "src/Syllables.txt";
+        String file = "Syllables.txt";
         loadFile(file);
         Scanner scan = new Scanner(System.in);
         while (scan.hasNext()) {
