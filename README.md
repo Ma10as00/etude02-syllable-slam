@@ -25,12 +25,19 @@ where ```input_file``` is the path to the file you want to read from.
 
 The program will then read the file line by line.
 
-## Testing the program
-For testing our syllable counting algorithm, we have created a java file called Tester.java which uses files full of words with the same number of syllables to give to the syllable counter.  
+## How It Works
+So, the first thing that the program does is make a hashmap full of words taken from the word library found from ```http://www.delphiforfun.org/programs/Syllables.htm```. The library consists of over 40,000 words and every line is formatted such that "word"="syllable 1"-"syllable 2"-"final syllable". So we simply made the hashmap's key prpoperty be the word string itself, and their value be the number of syllables on the other side of the equal sign. Sadly, this will have the Big O notation of the number of lines there are in the text file itself although, if the word you're looking for is in the text file, then it will give you the number of syllables in Big O of 1.
+
+If a word is not found in the 40,000 word : syllables text file, then we go to our syllable pattern finder. Our syllable pattern finder revolves mostly around vowels. To check if a part of the word is a syllable, we check if the 
+
+## Testing the program and benchmarking
+For testing our syllable counting algorithm, we have created a java file called Tester.java which uses files full of words with the same number of syllables to give to the syllable counter. These syllable testing files were taken from ```https://github.com/gautesolheim/25000-syllabified-words-list``` (Only first 300 words of each file).
 The file is located in the ```textFiles/``` folder.  
 To run the tester, you can run the following command in the terminal:  
-```java Tester.java```
+```java Testing.java```
 
 This will read from the 8 files currently stored in the ```textFiles/``` folder. (1Syllables.txt to 8Syllables.txt)  
 The program can only handle files with a maximum of 8 syllables.  
 The tester will output the number of syllables counted for each word in the file, and the accuracy of the program for each file.
+
+What we found is with these files, our accuracy is 
