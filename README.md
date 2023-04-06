@@ -40,24 +40,24 @@ This will read from the 8 files currently stored in the ```textFiles/``` folder.
 The program can only handle files with a maximum of 8 syllables.  
 The tester will output the number of syllables counted for each word in the file, and the accuracy of the program for each file.
 
-What we found is testing using these files, our accuracy without the word : syllables text file is:
-Accuracy for 1 syllables: 74.67%
-Accuracy for 2 syllables: 75.00%
-Accuracy for 3 syllables: 77.33%
-Accuracy for 4 syllables: 78.67%
-Accuracy for 5 syllables: 69.67%
-Accuracy for 6 syllables: 60.78%
-Accuracy for 7 syllables: 47.50%
-Accuracy for 8 syllables: 50.00%
+What we found is testing using these files, our accuracy without the word : syllables text file is:  
+Accuracy for 1 syllables: 74.67%  
+Accuracy for 2 syllables: 75.00%  
+Accuracy for 3 syllables: 77.33%  
+Accuracy for 4 syllables: 78.67%  
+Accuracy for 5 syllables: 69.67%  
+Accuracy for 6 syllables: 60.78%  
+Accuracy for 7 syllables: 47.50%  
+Accuracy for 8 syllables: 50.00%  
 
-Although what we found if we did use the word : syllable text file is that our accuray jumps to:
-Accuracy for 1 syllables: 98.67%
-Accuracy for 2 syllables: 98.67%
-Accuracy for 3 syllables: 99.33%
-Accuracy for 4 syllables: 99.33%
-Accuracy for 5 syllables: 85.33%
-Accuracy for 6 syllables: 69.96%
-Accuracy for 7 syllables: 55.00%
-Accuracy for 8 syllables: 50.00%
-
+Although what we found if we did use the word : syllable text file is that our accuracy jumps to:  
+Accuracy for 1 syllables: 98.67%  
+Accuracy for 2 syllables: 98.67%  
+Accuracy for 3 syllables: 99.33%  
+Accuracy for 4 syllables: 99.33%  
+Accuracy for 5 syllables: 85.33%  
+Accuracy for 6 syllables: 69.96%  
+Accuracy for 7 syllables: 55.00%  
+Accuracy for 8 syllables: 50.00%  
+  
 What this indicates is that we don't have the most accurate synonym counter program. It starts falling off steeply at 6 syllable words. If we had a larger word : synonym text file, or if we had a better synonym pattern finder, we could be more accurate. Although, what we found is that programmatically, there is no real "best" way to find the synonym patterns because there are too many exceptions to the rules you can think of for words in the English language without accounting for them directly.  There are many word : synonym pattern finders in the internet using much more complex ways of finding synonyms like phenome recognition but we think there is no 100% accurate way of doing this.
